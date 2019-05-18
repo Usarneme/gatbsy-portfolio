@@ -1,19 +1,48 @@
+body {
+  background: #f8f6ff;
+}
+
+main {
+  min-height: 80vh;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 4fr 8fr;
   grid-template-rows: auto;
   align-items: center;
   justify-items: center;
 }
 
-@media (min-width: 680px) {
-  .grid {
-    grid-template-columns: 2fr 3fr;
-  }
-}
-
 #devicons {
   display: grid;
+}
+
+.skill-holder {
+  grid-template-columns: minmax(150px, 1.6fr) minmax(150px, 2.4fr);
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.skill-holder:nth-child(odd) {
+  background: #fff;
+}
+
+@media (min-width: 800px) {
+  .skill-holder {
+    grid-template-columns: minmax(150px, 1.7fr) minmax(150px, 2.3fr);
+  }  
+}
+
+@media (min-width: 1200px) {
+  .skill-holder {
+    grid-template-columns: minmax(150px, 1.8fr) minmax(150px, 2.2fr);
+  }  
+}
+
+@media (min-width: 2000px) {
+  .skill-holder {
+    grid-template-columns: minmax(150px, 1.9fr) minmax(150px, 2.1fr);
+  }  
 }
 
 .skill-name {

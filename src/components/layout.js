@@ -29,18 +29,10 @@ const Layout = ({ children }) => (
         <Helmet>
           <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="none" onload="this.media='all';" />
           <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" media="none" onload="this.media='all';" />
+          <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: `1000px!important`,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main style={{margin: `25px`}}>{children}</main>
-        </div>
+        <main>{children}</main>
         <footer style={{background: `rebeccapurple`, padding: `25px`, color: `rgba(255,255,255,0.75)`}}>
           © {new Date().getFullYear()}, Built with
           {` `}

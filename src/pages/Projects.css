@@ -29,6 +29,7 @@ img {
   border: 1px groove #242;
   display: grid;
   grid-template-columns: 2fr 4fr;
+  color: #222;
 }
 
 .notes {
