@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 680px) {
+  .grid {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+#devicons {
+  display: grid;
+}
+
+.skill-name {
+  padding-right: 25px;
+}
+
+.skill-heading {
+  border-bottom: 2px solid lime;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.icons-container {
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  justify-self: end;
+}
+
+.right {
+  justify-self: start;
+  /* margin-left: -25px; */
+}
+
+/* The EN/ES language icons are a little top heavy */
+.lang {
+  padding-top: 10px;
+  margin-bottom: -15px;
+}
+
+/* Default Icon Fill Color */
+.icons {
+  fill: #333;
+}
+/* Highlighted Icons have a differe fill color */
+.icon-highlighted {
+  fill: #efe134;
+}
+
+svg {
+  margin: 0 3px;
+}
