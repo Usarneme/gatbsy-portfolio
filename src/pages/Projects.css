@@ -24,14 +24,53 @@ img {
 
 .project {
   text-decoration: none;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border: 1px groove #242;
-  display: grid;
-  grid-template-columns: 2fr 4fr;
+  margin: 0.25rem;
+  padding: 0.25rem;
   color: #222;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "pimg pimg pimg ph4"
+    "pimg pimg pimg psmall"
+    "pimg pimg pimg pp"
+    "pimg pimg pimg pp";
 }
 
-.notes {
-  padding: 1rem;
+.project > div {
+  grid-area: pimg;
+}
+.project > h4 {
+  grid-area: ph4;
+  padding: 4px;
+}
+.project > small {
+  grid-area: psmall;
+  padding: 4px;
+}
+.project > p {
+  grid-area: pp;
+  padding: 4px;
+}
+
+@media (min-width: 600px) {
+  .project {
+    grid-template-areas: 
+    "pimg pimg ph4 ph4"
+    "pimg pimg psmall psmall"
+    "pimg pimg pp pp";
+    padding: 8px;
+  }  
+}
+
+@media (min-width: 1000px) {
+  .project {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ph4 ph4 ph4 ph4 ph4 ph4"
+    "pimg pimg pimg psmall psmall psmall"
+    "pimg pimg pimg pp pp pp"
+    "pimg pimg pimg pp pp pp";
+    padding: 15px;
+  }
 }

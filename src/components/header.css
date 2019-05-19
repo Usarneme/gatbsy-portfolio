@@ -3,7 +3,7 @@ header {
   display: flex!important;
   text-align: center;
   margin-bottom: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .header-container {
@@ -25,18 +25,28 @@ header {
 }
 
 .nav-link {
-  margin: 10px;
-  border-bottom: 3px solid lime;
+  margin: 1px;
+  padding: 4px 10px;
+  border: 1px dashed rgba(102, 102, 102, 0.5);
+  border-bottom: 4px solid lime;
+  transition: all 200ms ease-in;
+  transform: scale(1);
 }
 
 .nav-link:first-of-type {
-  margin: 0;
-  margin-right: 10px;
+  /* padding: 0;
+  padding-right: 10px; */
 }
 
 .nav-link:hover, .nav-link:focus {
-  background: rgba(255, 255, 255, 0.15)!important;
-  transform: scale(1.5)!important;
-  transition: transform 0.5s ease-in-out!important;
-  transition: background 1s ease-in-out!important;
+  background: rgba(255, 255, 255, 0.35)!important;
+  /* transform: scale(1.5)!important; */
+  transition: all 0.5s ease-in-out!important;
+}
+
+.active-nav {
+  font-weight: 600;
+  font-size: xx-large;
+  padding: 1px 10px;
+  background: rgba(255, 255, 255, 0.1)!important;
 }

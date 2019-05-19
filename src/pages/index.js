@@ -28,8 +28,8 @@ import "./index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `usarneme`, `ididnotknowicoulddothat`]} />
-    <div className="container icons-container">
-      <h3>Knowledge, Skills, and Abilities</h3>
+    <section className="container icons-container">
+      <h2>Knowledge, Skills, and Abilities</h2>
       <div id="devicons">
 
         <div className="grid skill-holder">
@@ -215,7 +215,7 @@ const IndexPage = () => (
         </div>
 
       </div>
-    </div>
+    </section>
   </Layout>
 )
 

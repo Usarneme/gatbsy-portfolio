@@ -18,9 +18,10 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Link to="/" className="nav-link">Home</Link>
-      <Link to="/CV/" className="nav-link">CV</Link>
-      <Link to="/Projects/" className="nav-link">Projects</Link>
+      
+      <Link to="/" className={window.location.pathname === "/" ? "nav-link active-nav" : "nav-link"}>Home</Link>
+      <Link to="/CV/" className={window.location.pathname === "/CV/" ? "nav-link active-nav" : "nav-link"}>CV</Link>
+      <Link to="/Projects/" className={window.location.pathname === "/Projects/" ? "nav-link active-nav" : "nav-link"}>Projects</Link>
     </div>
   </header>
 )
