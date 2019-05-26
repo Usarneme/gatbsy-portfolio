@@ -17,11 +17,11 @@ const Header = ({ siteTitle }) => (
         <Link to="/" className="site-title">
           {siteTitle}
         </Link>
-      </h1>
-      
-      <Link to="/" className={window.location.pathname === "/" ? "nav-link active-nav" : "nav-link"}>Home</Link>
-      <Link to="/CV/" className={window.location.pathname === "/CV/" ? "nav-link active-nav" : "nav-link"}>CV</Link>
-      <Link to="/Projects/" className={window.location.pathname === "/Projects/" ? "nav-link active-nav" : "nav-link"}>Projects</Link>
+      </h1> 
+
+      <Link to="/" className={typeof window !== "undefined" && (window.location.pathname !== "/Projects/" && window.location.pathname !== "/CV/") ? "nav-link active-nav" : "nav-link"}>Home</Link>
+      <Link to="/CV/" className={typeof window !== "undefined" && window.location.pathname === "/CV/" ? "nav-link active-nav" : "nav-link"}>CV</Link>
+      <Link to="/Projects/" className={typeof window !== "undefined" && window.location.pathname === "/Projects/" ? "nav-link active-nav" : "nav-link"}>Projects</Link>
     </div>
   </header>
 )

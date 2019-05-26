@@ -20,14 +20,16 @@ header {
 
 .nav-link,
 .site-title {
-  color: white;
+  color: #eef;
   text-decoration: none;
 }
 
-.nav-link {
+a.nav-link {
   margin: 1px;
   padding: 4px 10px;
-  border: 1px dashed rgba(102, 102, 102, 0.5);
+  border: 1px dashed rgba(141, 70, 199, 0.4);
+  border-radius: 5px 5px 0 0;
+  background: rgba(141, 70, 199, 0.7)!important;
   border-bottom: 4px solid lime;
   transition: all 200ms ease-in;
   transform: scale(1);

@@ -2,47 +2,48 @@ img {
   margin: 0;
 }
 
+h4 {
+  margin: 0;
+}
+
 #projects-container {
   display: grid; 
   grid-template-columns: 1fr;
-  align-items: center;
-  align-content: center;
   text-decoration: none;
-}
-
-@media (min-width: 1500px) {
-  #projects-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1900px) {
-  #projects-container {
-    grid-template-columns: 3fr 4fr 3fr;
-  }
+  background: #efefef;
 }
 
 .project {
+  background: #fff;
+  box-shadow: 0px 0px 3px #aaa;
   text-decoration: none;
-  margin: 0.25rem;
+  margin: 8px 2px;
   padding: 0.25rem;
+  border-left: 3px solid lime;
   color: #222;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-    "pimg pimg pimg ph4"
-    "pimg pimg pimg psmall"
-    "pimg pimg pimg pp"
-    "pimg pimg pimg pp";
+    "ph4  ph4  ph4"
+    "psmall psmall psmall"
+    "pimg pimg pimg"
+    "pimg pimg pimg"
+    "pimg pimg pimg"
+    "pp pp pp"
+    "pp pp pp"
+    "pp pp pp"
+    "pp pp pp";
+  justify-items: center;
 }
 
-.project > div {
-  grid-area: pimg;
-}
 .project > h4 {
   grid-area: ph4;
   padding: 4px;
+}
+.project > div {
+  grid-area: pimg;
+  margin: 2px;
+  width: 100%;
 }
 .project > small {
   grid-area: psmall;
@@ -55,22 +56,44 @@ img {
 
 @media (min-width: 600px) {
   .project {
+    grid-template-columns: 250px 1fr;
     grid-template-areas: 
-    "pimg pimg ph4 ph4"
-    "pimg pimg psmall psmall"
-    "pimg pimg pp pp";
-    padding: 8px;
-  }  
+      "pimg pimg ph4"
+      "pimg pimg psmall"
+      "pimg pimg pp";
+    padding: 0.5rem;
+    justify-items: initial;
+  }
+  .project > *, .project > h4 {
+    margin: 10px;
+    padding: 10px;
+  }
+  .gatsby-image-wrapper {
+    max-width: 350px;
+  }
 }
 
 @media (min-width: 1000px) {
   .project {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "ph4 ph4 ph4 ph4 ph4 ph4"
-    "pimg pimg pimg psmall psmall psmall"
-    "pimg pimg pimg pp pp pp"
-    "pimg pimg pimg pp pp pp";
-    padding: 15px;
+    "pimg ph4"
+    "pimg psmall"
+    "pimg pp";
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project {
+    margin: 20px;
+  }
+  #projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1900px) {
+  #projects-container {
+    grid-template-columns: 3fr 4fr 3fr;
   }
 }

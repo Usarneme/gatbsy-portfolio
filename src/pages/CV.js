@@ -20,6 +20,7 @@ const CV = () => (
             <span>December, 2017 - present (current position)</span>
           </div>
           <div>
+            <p>Project Manage implementation and training for all new customers for a SaaS CyberSecurity organization. Gather technical requirements, coordinate provisioning, installation, setup and configuration of security appliance and other SaaS platforms. Track feature development and communicate roadmap. Provide overview, onboarding, and other training on security software.</p>
           </div>
         </div>
 
@@ -32,7 +33,7 @@ const CV = () => (
           </div>
           <div>
             <span>Profile Link: <a href="https://www.codementor.io/tomgeraghty">https://www.codementor.io/tomgeraghty</a></span>
-            <p>Provide assistance on demand for a variety of customer needs. Provide training and mentorship for students and those wanting to expand their knowledge of different programming paradigms. Provide code reviews and bug fixes for production websites. Quickly assess issues, provide estimates of work and time involved in remediation while providing transparency through open communication. </p>
+            <p>Provide assistance on demand for a variety of customer needs. Provide training and mentorship for students and those wanting to expand their knowledge of different programming paradigms. Provide code reviews and bug fixes for production websites. Quickly assess issues, provide estimates of work and time involved in remediation while maintaining transparency through open communication. </p>
           </div>
         </div>
 
@@ -45,6 +46,9 @@ const CV = () => (
             <span>September, 2015 - October, 2017</span>
           </div>
           <div>
+          <p>
+            Provide services to clients which could include eligibility assessment and intake for Oregon Supplemental Income Program (OSIP), Presumptive Medicaid, SNAP, and the Oregon Health Plan. Assess client needs and risk status through home visits, phone calls, and office consultations. Connect clients with resources appropriate to their needs. Develop comprehensive, client-centered care plans. Strong interpersonal, communication, and organizational skills. Commitment to delivering person-centered care. Ensure program integrity by following local practice and procedure, Oregon administrative rules, as well as State and Federal policy and law. Keep up with changing rules, policies and procedures. Prioritize workload and deadlines as new, emergent tasks arise. Communicate complex policy to individuals with different communication styles and abilities. Work with business providers, law enforcement, and the general public.
+          </p>
           </div>
         </div>
 
@@ -57,6 +61,9 @@ const CV = () => (
             <span>June, 2010 - September 2015</span>
           </div>
           <div>
+            <p>
+              Determine eligibility for public assistance programs such as: SNAP (Food Stamps), ERDC (Employment Related Day Care), TANF (Temporary Assistance for Needy Families), and the Oregon Health Plan (Medicaid). Connect clients with resources appropriate to their needs. Strong interpersonal, communication, and organizational skills. Ensure program integrity by following local practice and procedure, Oregon administrative rules, as well as State and Federal policy. Keep up with changing rules, policies and procedures. Prioritize workload and deadlines as new, emergent tasks arise. Communicate complex policy to individuals with different communication styles and abilities.
+            </p>
           </div>
         </div>
 
@@ -68,6 +75,9 @@ const CV = () => (
             <span>January 2015 - December 2015</span>
           </div>
           <div>
+            <p>
+              Partnership focused on developing websites for local musicians, vendors, non-profit and other organizations. Utilized various Content Management Systems such as Drupal, WordPress, Concrete5, etc. Created various *AMP (typically LAMP) stacks for website development. Worked in Linux, Mac, and Windows development ecosystems. Utilized content versioning control through Git. Followed paradigm of Development, Testing, and Production environments to ensure site reliability during development and updates/upgrades and fallbacks should errors arise.
+            </p>
           </div>
         </div>
 

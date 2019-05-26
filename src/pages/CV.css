@@ -3,7 +3,7 @@ h2 {
 }
 
 h4 {
-  margin: 10px 0;
+  margin: 10px 0!important;
 }
 
 p {
@@ -11,8 +11,9 @@ p {
 }
 
 .cv-container {
-  margin: 5px 0;
+  margin: 5px auto;
   text-align: initial;
+  max-width: 1200px;
 }
 
 .pro-card {
@@ -25,6 +26,7 @@ p {
 
 .info {
   margin-bottom: 5px;
+  display: grid;
 }
 
 @media (min-width: 800px) {
