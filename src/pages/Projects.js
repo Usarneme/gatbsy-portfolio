@@ -24,8 +24,10 @@ import './Projects.css'
 const Projects = () => (
   <Layout>
     <SEO title="Projects" />
+    <div className="github-link center">
+      <h2><a href="https://github.com/usarneme">Please check out my <span className="github-button">GitHub Portfolio</span> for more projects and code examples!</a></h2>
+    </div>
     <section id="projects-container">
-
       <a href="https://usarneme-flashcards.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project card flashcards">
         <h4>Flashcards</h4>
         <small>for learning</small>

@@ -54,6 +54,34 @@ h4 {
   padding: 4px;
 }
 
+.github-link {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.github-button {
+  border: 1ps dashed lightslategray;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.15);
+  padding: 6px;
+  margin: 0 -6px;
+}
+
+.github-button:hover {
+  transform: background-color 1s linear;
+  background-color: rgba(255,255,255,0.5);
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 600px) {
   .project {
     grid-template-columns: 250px 1fr;
