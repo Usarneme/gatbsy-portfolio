@@ -2,9 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 import { QuickStartCanvas } from "react-pts-canvas"
-import { Create, Group, Line, Pt, Rectangle } from "pts"
+import { Create, Group } from "pts"
 
-import ImageProfile from "../components/image_profile"
+import ImageProfile from "../components/image_components/image_profile"
 import "./header.css"
 
 
@@ -31,9 +31,9 @@ class Header extends React.Component {
     return (  
       <header>
         <nav className="nav fixed">
-          <Link to="/" className={typeof window !== "undefined" && (window.location.pathname !== "/Projects/" && window.location.pathname !== "/CV/") ? "nav-link active-nav" : "nav-link"}>Home</Link>
-          <Link to="/CV/" className={typeof window !== "undefined" && window.location.pathname === "/CV/" ? "nav-link active-nav" : "nav-link"}>CV</Link>
-          <Link to="/Projects/" className={typeof window !== "undefined" && window.location.pathname === "/Projects/" ? "nav-link active-nav" : "nav-link"}>Projects</Link>
+          <Link to="/" className="nav-link" activeClassName="active-nav">Home</Link>
+          <Link to="/CV/" className="nav-link" activeClassName="active-nav">CV</Link>
+          <Link to="/Projects/" className="nav-link" activeClassName="active-nav">Projects</Link>
         </nav>
         <div className="header-container">
           <div className="canvas-container">
@@ -54,7 +54,7 @@ class Header extends React.Component {
               // play={false}
               onAnimate={ (space, form, time, ftime) => {
                 const colors = ["#bbaabb", "#bbabbb"]
-                const line = new Line([0,0],space.innerBound.bottomRight)
+                // const line = new Line([0,0],space.innerBound.bottomRight)
 
                 if (this.state.pts && this.state.pts.length > 0) {
 
