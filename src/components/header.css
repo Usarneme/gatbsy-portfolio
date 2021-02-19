@@ -1,54 +1,87 @@
 header {
-  background: rebeccapurple;
   display: flex!important;
   text-align: center;
-  margin-bottom: 10px;
-  padding-bottom: 4px;
+  width: 100vw;
 }
 
 .header-container {
   margin: 0 auto;
-  max-width: 960;
-  padding: 1.45rem 1.0875rem 0 1.45rem;
+  padding: 0;
 }
 
-.image-container {
-  max-width: 320px;
+.overlay-span {
+  position: absolute; 
+  display: flex;
+  /* Center element vert/horiz */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.canvas-container {
   margin-bottom: 1.45rem;
-  border-radius: 50%!important;
+  position: relative; 
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pts-react {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+nav.nav {
+  transition: all 200ms ease-in;
+  z-index: 101;
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  display: flex;
+  top: 0;
+  height: 4rem;
+  align-items: center;
 }
 
 .nav-link,
 .site-title {
-  color: #eef;
   text-decoration: none;
 }
 
 a.nav-link {
-  margin: 1px;
-  padding: 4px 10px;
+  background: rgba(0,0,0,0.5);
+  min-height: 4rem;
+  padding: 0.4rem;
+  padding-top: 1rem;
   border: 1px dashed rgba(141, 70, 199, 0.4);
-  border-radius: 5px 5px 0 0;
-  background: rgba(141, 70, 199, 0.7)!important;
-  border-bottom: 4px solid lime;
-  transition: all 200ms ease-in;
   transform: scale(1);
-}
-
-.nav-link:first-of-type {
-  /* padding: 0;
-  padding-right: 10px; */
+  margin-right: 0.2rem;
 }
 
 .nav-link:hover, .nav-link:focus {
-  background: rgba(255, 255, 255, 0.35)!important;
-  /* transform: scale(1.5)!important; */
   transition: all 0.5s ease-in-out!important;
 }
 
-.active-nav {
+a.nav-link.active-nav {
+  border-bottom: 4px solid lime;
   font-weight: 600;
   font-size: xx-large;
   padding: 1px 10px;
-  background: rgba(255, 255, 255, 0.1)!important;
+}
+
+.gatsby-image-wrapper {
+  border-radius: 50%;
+  min-width: 20vw;
+}
+
+/* CANVAS DRAWING */
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

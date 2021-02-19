@@ -33,10 +33,10 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer style={{background: `rebeccapurple`, padding: `25px`, color: `rgba(255,255,255,0.75)`}}>
+        <footer className="footer">
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org" style={{ textDecoration: `none`, color: `white` }}>Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </>
     )}
