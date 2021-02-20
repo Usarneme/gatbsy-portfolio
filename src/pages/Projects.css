@@ -37,7 +37,7 @@ h4 {
   grid-area: ph4;
   padding: 4px;
 }
-.project > div {
+.project > div.portfolio-image {
   grid-area: pimg;
   margin: 2px;
   width: 100%;

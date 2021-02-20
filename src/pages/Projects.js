@@ -13,7 +13,6 @@ import ImageMadlibs from "../components/image_components/image_madlibs"
 import ImageMeditations from "../components/image_components/image_meditations"
 import ImageNotes from "../components/image_components/image_notes"
 import ImagePomodoro from "../components/image_components/image_pomodoro"
-import ImageRR4SPA from "../components/image_components/image_rr4spa"
 import ImageSocketChat from "../components/image_components/image_socketchat"
 import ImageTasklist from "../components/image_components/image_tasklist"
 import ImageTictactoe from "../components/image_components/image_tictactoe"
@@ -28,6 +27,8 @@ const Projects = () => (
       <h2><a href="https://github.com/usarneme">Please check out my <span className="github-button">GitHub Portfolio</span> for more projects and code examples!</a></h2>
     </div>
     <section id="projects-container">
+
+
       <a href="https://usarneme-flashcards.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project card flashcards">
         <h4>Flashcards</h4>
         <small>for learning</small>
@@ -89,13 +90,6 @@ const Projects = () => (
         <small>green screen selfies</small>
         <ImageWebcamArtist className="portfolio-image" alt="The Stoic Madlib app." />
         <p>A fun way to play with video effects using your computer's webcam. Apply visual effects like color shifting to sepia tone. A green screen effect is possible by adjusting color sliders to match the background color behind you. Try other fun effects and combinations!</p>
-      </a>
-
-      <a href="http://rrspa.surge.sh/" target="_blank" rel="noopener noreferrer" className="project card meditations">
-        <h4>Single Page Application Built on React Router (v4)</h4>
-        <small>hey you didn't really change pages</small>
-        <ImageRR4SPA className="portfolio-image" alt="The React Router 4 Single Page application." />
-        <p>A test demonstration of a single page application built using React Router for all front-end page routing. HTML5 push state updates history and emulates normal page navigation for bread-crumbing. However no requests are sent to the server so the page load is essentially instantaneous.</p>
       </a>
 
       <a href="https://gifsearch4.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project card meditations">

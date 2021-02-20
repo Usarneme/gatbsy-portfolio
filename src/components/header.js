@@ -35,6 +35,7 @@ class Header extends React.Component {
           <Link to="/CV/" className="nav-link" activeClassName="active-nav">CV</Link>
           <Link to="/Projects/" className="nav-link" activeClassName="active-nav">Projects</Link>
         </nav>
+
         <div className="header-container">
           <div className="canvas-container">
             <QuickStartCanvas
@@ -159,6 +160,10 @@ class Header extends React.Component {
             />
             <span className="overlay-span">
               <ImageProfile />
+              <div>
+                <h1>Hi, I'm Tom!</h1>
+                <p>Full Stack Software Developer, Designer, Problem-Solver</p>
+              </div>
             </span>
           </div>
 

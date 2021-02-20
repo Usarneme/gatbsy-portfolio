@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 /*
@@ -13,7 +14,7 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const ImageSocketChat = () => (
+const ImageSocketChat = (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -26,7 +27,12 @@ const ImageSocketChat = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img className={props.className} fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
+
+ImageSocketChat.propTypes = {
+  className: PropTypes.string.isRequired
+}
+
 export default ImageSocketChat

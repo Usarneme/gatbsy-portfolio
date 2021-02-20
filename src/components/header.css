@@ -74,8 +74,8 @@ a.nav-link.active-nav {
 }
 
 .gatsby-image-wrapper {
-  border-radius: 50%;
-  min-width: 20vw;
+  /* border-radius: 50%; */
+  min-width: 10rem;
 }
 
 /* CANVAS DRAWING */
