@@ -1,7 +1,7 @@
 import React from 'react'
 
 const English_Language_Icon = (props) => (
-  <svg xmlns='http://www.w3.org/2000/svg' className={props.highlighted ? 'icons svg icon-highlighted' : 'icons svg'} width={props.width} height={props.height} viewBox='0 0 128 128' aria-labelledby={props.iconTitle}>
+  <svg xmlns='http://www.w3.org/2000/svg' className="icons svg icon-en" width={props.width} height={props.height} viewBox='0 0 128 128' aria-labelledby={props.iconTitle}>
     <title id={props.iconTitle}>English Language Icon</title>
     <path d='M84,5H16C9.9,5,5,9.6,5,15.3V67c0,5.7,4.9,10.3,11,10.3h7.2v15.3c0,0.9,0.6,1.8,1.5,2.2c0.4,0.2,0.7,0.2,1.1,0.2 c0.6,0,1.2-0.2,1.7-0.5l22.7-17.2H84c6.1,0,11-4.6,11-10.3V15.3C95,9.6,90.1,5,84,5z M89.9,66.9c0,3-2.6,5.4-5.8,5.4H49.2 c-0.6,0-1.2,0.2-1.7,0.5L28.4,87.3V74.7c0-1.3-1.2-2.4-2.6-2.4h-9.8c-3.2,0-5.8-2.4-5.8-5.4V15.5c0-3,2.6-5.4,5.8-5.4h68.2 c3.2,0,5.8,2.4,5.8,5.4V66.9z'
     />

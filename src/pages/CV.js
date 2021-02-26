@@ -8,8 +8,8 @@ import "./CV.css"
 const CV = () => (
   <Layout>
     <SEO title="CV" />
-    <section className="cv-container">
-      <div className="professional">
+    <div className="cv-container">
+      <section className="professional">
         <h2>Professional History</h2>
 
         <div className="pro-card">
@@ -81,9 +81,9 @@ const CV = () => (
           </div>
         </div>
 
-      </div>
+      </section>
 
-      <div className="coursework">
+      <section className="coursework">
         <h2>Tech Relevant Coursework</h2>
 
         <div className="pro-card">
@@ -117,8 +117,9 @@ const CV = () => (
           <p>Areas of study include all those listed above in Web Design, plus: JavaScript, jQuery, Responsive Layouts, AJAX Basics, Object-Oriented JavaScript, Accessibility, Website Optimization, Console Foundations, Git Basics, Front End Performance Optimization and more.</p>
         </div>
 
-      </div>
-    </section>
+      </section>
+
+    </div>
   </Layout>
 )
 

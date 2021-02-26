@@ -12,10 +12,10 @@ header {
 .overlay-span {
   position: absolute; 
   display: flex;
-  /* Center element vert/horiz */
-  top: 50%;
+  /* Center element horizontally */
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 3rem);
 }
 
 .canvas-container {
@@ -27,23 +27,22 @@ header {
 
 .pts-react {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   padding: 0;
   margin: 0;
-  top: 1rem;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 nav.nav {
+  background: var(--color12);
   transition: all 200ms ease-in;
   z-index: 101;
-  position: fixed;
+  /* position: fixed;
+  top: 0; */
   box-shadow: 0 5px 0 rgba(0,0,0,0.1);
   display: flex;
-  top: 0;
-  height: 4rem;
   align-items: center;
 }
 
@@ -53,10 +52,10 @@ nav.nav {
 }
 
 a.nav-link {
-  background: rgba(0,0,0,0.5);
+  /* background: rgba(0,0,0,0.5);
   min-height: 4rem;
   padding: 0.4rem;
-  padding-top: 1rem;
+  padding-top: 1rem; */
   border: 1px dashed rgba(141, 70, 199, 0.4);
   transform: scale(1);
   margin-right: 0.2rem;
@@ -73,9 +72,10 @@ a.nav-link.active-nav {
   padding: 1px 10px;
 }
 
-.gatsby-image-wrapper {
-  /* border-radius: 50%; */
-  min-width: 10rem;
+.profile-image {
+  border-radius: 50%;
+  min-width: 20rem;
+  max-width: 70vw;
 }
 
 /* CANVAS DRAWING */
@@ -84,4 +84,32 @@ canvas {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 500px) {
+  .overlay-span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+}
+@media (min-width: 700px) {
+  .profile-image {
+    min-width: 25rem;
+  }
+  .pts-react {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    min-height: 93vh;
+    bottom: 1rem;  
+  }
+}
+@media (min-width: 900px) {
+}
+@media (min-width: 1100px) {
+  .pts-react {
+  }
+}
+@media (min-width: 1900px) {
 }

@@ -31,7 +31,7 @@ const ImageAffirmations = (props) => (
   />
 )
 
-Image.propTypes = {
+ImageAffirmations.propTypes = {
   className: PropTypes.string.isRequired
 }
 

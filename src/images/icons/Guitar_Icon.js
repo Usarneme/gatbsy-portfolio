@@ -1,7 +1,7 @@
 import React from 'react'
 
 const GuitarIcon = (props) => (
-  <svg xmlns='http://www.w3.org/2000/svg' className={props.highlighted ? 'icons svg icon-highlighted' : 'icons svg'} width={props.width} height={props.height} viewBox='0 0 100 100' aria-labelledby={props.iconTitle}>
+  <svg xmlns='http://www.w3.org/2000/svg' className={"icons svg "+props.className} width={props.width} height={props.height} viewBox='0 0 100 100' aria-labelledby={props.iconTitle}>
     <title id={props.iconTitle}>Guitar Icon</title>
     <switch>
         <g>

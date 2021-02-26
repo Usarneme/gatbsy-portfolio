@@ -1,7 +1,7 @@
 import React from 'react'
 
 const React_Icon = (props) => (
-  <svg xmlns='http://www.w3.org/2000/svg' className={props.highlighted ? 'icons svg icon-highlighted' : 'icons svg'} width={props.width} height={props.height} viewBox='0 0 128 128' aria-labelledby={props.iconTitle}>
+  <svg xmlns='http://www.w3.org/2000/svg' className={"icons svg "+props.className} width={props.width} height={props.height} viewBox='0 0 128 128' aria-labelledby={props.iconTitle}>
     <title id={props.iconTitle}>React Icon</title>
     <g>
       <circle cx='64' cy='64' r='11.4' />

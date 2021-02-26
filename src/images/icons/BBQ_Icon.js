@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BBQ_Icon = (props) => (
-  <svg xmlns='http://www.w3.org/2000/svg' className={props.highlighted ? 'icons svg icon-highlighted' : 'icons svg'} width={props.width} height={props.height} viewBox='0 0 100 100' aria-labelledby={props.iconTitle}>
+  <svg xmlns='http://www.w3.org/2000/svg' className={"icons svg "+props.className} width={props.width} height={props.height} viewBox='0 0 100 100' aria-labelledby={props.iconTitle}>
     <title id={props.iconTitle}>Barbecue Icon</title>
     <path d='M68.021,73.852c-5.825,0-10.564,4.739-10.564,10.564c0,5.826,4.739,10.563,10.564,10.563s10.564-4.737,10.564-10.563 C78.585,78.591,73.846,73.852,68.021,73.852z M68.021,89.42c-2.76,0-5.004-2.245-5.004-5.004s2.244-5.005,5.004-5.005 c2.759,0,5.005,2.246,5.005,5.005S70.779,89.42,68.021,89.42z'
     />

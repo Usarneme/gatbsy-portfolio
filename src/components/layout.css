@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
 article,
 aside,
 details,
@@ -31,6 +34,7 @@ template {
 
 a {
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -67,9 +71,6 @@ sub {
 }
 sup {
   top: -0.5em;
-}
-img {
-  border-style: none;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -177,7 +178,7 @@ html {
 }
 * {
   box-sizing: inherit;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Roboto', 'Anonymous Pro', monospace;
 }
 *:before {
   box-sizing: inherit;
@@ -236,50 +237,33 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  border-style: none;
+}
+h1, h2, h3, h4, h5 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
 }
 h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
   font-size: 2.2rem;
-  line-height: 1.1;
 }
+
 h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
   font-size: 1.75rem;
-  line-height: 1.1;
 }
 h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
+  padding: 0;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -289,55 +273,13 @@ h3 {
   line-height: 1.1;
 }
 h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
   font-size: 1.45rem;
-  line-height: 1.1;
 }
 h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
   font-size: 1.35rem;
-  line-height: 1.1;
 }
 h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
   font-size: 1.25rem;
-  line-height: 1.1;
 }
 hgroup {
   margin-left: 0;
@@ -360,6 +302,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+  list-style-type: none;
 }
 ol {
   margin-left: 1.45rem;
@@ -551,7 +494,6 @@ li *:last-child {
 p *:last-child {
   margin-bottom: 0;
   text-decoration: none;
-  color: initial;
 }
 li > p {
   margin-bottom: calc(1.45rem / 2);
@@ -632,8 +574,117 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+/* END OF DEFAULT LAYOUT STYLES - GATSBY'S OPINIONS */
+
+/* COLOR PALETTE */
+:root {
+  --background:	#1A2026;
+  --backgroundLight: #798591;
+  --foreground:	#FFFFFF;
+  --textColor: #ddddac;
+  --highlightColor:	#fff4b5;
+  --color0:	#242D35;
+  --color1:	#FB6396;
+  --color2:	#94CF95;
+  --color3:	#F692B2;
+  --color4:	#6EC1D6;
+  --color5:	#CD84C8;
+  --color6:	#7FE4D2;
+  --color7:	#FFEE88;
+  --color8:	#526170;
+  --color9:	#F92D72;
+  --color10:	#6CCB6E;
+  --color11:	#F26190;
+  --color12:	#4CB9D6;
+  --color13:	#C269BC;
+  --color14:	#58D6BF;
+  --color15:	#F4F5F2;
+}
+
+/* SHARED STYLES */
+body {
+  background: linear-gradient(60deg, var(--background) 0%, var(--backgroundLight) 100%);
+  color: var(--textColor);
+}
+
+h1,h2,h3,h4,h5 {
+  color: var(--highlightColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlightColor);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 1rem;
+}
+
+/* HELPER STYLES */
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rows {
+  flex-direction: row;
+}
+
+.abs {
+  position: absolute;
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+/* MAX WIDTH HELPERS */
+.six {
+  max-width: 600px;
+  margin: inherit auto;
+}
+
+.nine {
+  max-width: 900px;
+  margin: inherit auto;
+}
+
+.twelve {
+  max-width: 1200px;
+  margin: inherit auto;
+}
+
+/* GATSBY WRAPPER - main section below header above footer */
+main {
+  min-height: 80vh;
+}
+
+section {
+  margin: 2.5rem auto;
+}
+
+/* GATSBY WRAPPER - images */
+.gatsby-image-wrapper {
+  border: 2px groove white;
+}
+
+/* GATSBY WRAPPER - footer */
+footer.footer {
+  margin-top: 1rem;
+  padding: 4rem 0.5rem 1rem;
 }

@@ -1,118 +1,206 @@
-/* COLOR PALETTE */
-:root {
-  --background:	#1A2026;
-  --foreground:	#FFFFFF;
-  --cursorColor:	#FFFFFF;
-  --color0:	#242D35;
-  --color1:	#FB6396;
-  --color2:	#94CF95;
-  --color3:	#F692B2;
-  --color4:	#6EC1D6;
-  --color5:	#CD84C8;
-  --color6:	#7FE4D2;
-  --color7:	#FFFFFF;
-  --color8:	#526170;
-  --color9:	#F92D72;
-  --color10:	#6CCB6E;
-  --color11:	#F26190;
-  --color12:	#4CB9D6;
-  --color13:	#C269BC;
-  --color14:	#58D6BF;
-  --color15:	#F4F5F2;
+.index-container {
+  margin: 1rem;
+  background: var(--color8);
 }
 
-body, h1, h2, h3, h4, h5, a {
-  background: var(--background);
-  color: var(--cursorColor);
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-main {
-  min-height: 80vh;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: auto;
-  align-items: center;
-  justify-items: center;
-}
-
-#devicons {
-  display: grid;
-}
-
-.skill-holder {
-  grid-template-columns: minmax(150px, 1.6fr) minmax(150px, 2.4fr);
-  margin: 5px 0;
-  padding: 5px 0;
-}
-
-.skill-holder:nth-child(odd) {
-  /* background: #fff; */
-}
-
-@media (min-width: 800px) {
-  .skill-holder {
-    grid-template-columns: minmax(150px, 1.7fr) minmax(150px, 2.3fr);
-  }  
-}
-
-@media (min-width: 1200px) {
-  .skill-holder {
-    grid-template-columns: minmax(150px, 1.8fr) minmax(150px, 2.2fr);
-  }  
-}
-
-@media (min-width: 2000px) {
-  .skill-holder {
-    grid-template-columns: minmax(150px, 1.9fr) minmax(150px, 2.1fr);
-  }  
-}
-
-.skill-name {
-  padding-right: 25px;
-}
-
-.skill-heading {
-  border-bottom: 2px solid lime;
-  padding: 0;
-  margin-right: 25px;
-}
-
-.icons-container {
-  align-items: center;
+.focus-areas {
+  display: inline-block;
+  position: relative;
   text-align: center;
 }
 
-.left {
-  justify-self: end;
+i.icon.mdi {
+  color: #fff;
+  font-size: 34pt!important;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  z-index: 1;
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
 }
 
-.right {
-  justify-self: start;
-  /* margin-left: -25px; */
+.hexagon-wrapper {
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  width: 80px;
 }
 
-/* The EN/ES language icons are a little top heavy */
-.lang {
-  padding-top: 10px;
-  margin-bottom: -15px;
+.bullet-point-wrapper {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hexagon {
+  background-color: #04c2c9;
+  display: inline-block;
+  height: 100%;
+  width: calc(100% * 0.57735);
+}
+
+.hexagon::after {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(-60deg);
+  width: inherit;
+}
+
+.hexagon::before {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(60deg);
+  width: inherit;
+}
+
+.focus-area {
+  margin: 0.15rem;
+  background: rgba(0,0,0,0.1);
+  padding: 0.25rem;
+}
+
+#devicons {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.sub-heading,
+.sub-heading > h2 {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem 0.5rem;
+}
+
+.skill-holder,
+.percent-container, 
+.skill-name,
+.tag-holder {
+  font-size: 1.1rem;
+  height: 2.2rem;
+}
+
+.skill-holder {
+  background: var(--color0);
+  align-items: flex-end;
+  background-color: gray;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+
+.skill-name {
+  background: linear-gradient(to left, var(--color15), var(--color4) 100%);
+  top: 0;
+  opacity: 0.9;
+  padding: 0.25rem;
+}
+
+section {
+  background: var(--color0);
+}
+
+section:nth-of-type(2) .skill-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tag-holder {
+  background: var(--color0);
+  width: 8rem;
+  justify-content: space-between;
+  padding: 0.25rem 0.4rem;
+}
+
+.percent-container {
+  display: none;
+  padding-right: 1rem;
+  z-index: 2;
+  opacity: 0.5;
+  color: var(--highlightColor);
 }
 
 /* Default Icon Fill Color */
 .icons {
-  fill: #333;
-}
-/* Highlighted Icons have a differe fill color */
-.icon-highlighted {
-  fill: #efe134;
+  fill: var(--textColor);
+  padding: 1px;
 }
 
-svg {
-  margin: 0 3px;
+/* The EN/ES language icons are a little top heavy, 
+* This makes them appear to be better centered vertically */
+.icon-en, 
+.icon-es {
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+.icon-js,
+.icon-bs {
+  padding: 2px;
+}
+.icon-bbq {
+  margin-left: -2px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+  .focus-area {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+}
+@media (min-width: 700px) {
+  .skill-holder,
+  .percent-container, 
+  .skill-name,
+  .tag-holder {
+    font-size: 1.4rem;
+    height: 3.1rem;
+  }
+  .tag-holder {
+    width: 11rem;
+  }  
+}
+@media (min-width: 900px) {
+  .focus-area {
+    margin: 1rem;
+    padding: 1.25rem;
+    height: 25rem; /* 10px * 25rem = 250px */
+  }
+
+  .bullet-point-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  .skill-holder,
+  .percent-container, 
+  .skill-name,
+  .tag-holder {
+    font-size: 1.7rem;
+  }
+  .tag-holder {
+    width: 14rem;
+  } 
+}
+@media (min-width: 1900px) {
 }
