@@ -2,9 +2,9 @@ import React from "react"
 
 function Journey() {
   return (
-    <section className="journey">
+    <section className="container nine journey">
       <h2>Software Developer Journey</h2>
-      <div className="beginner">
+      <div className="card beginner">
         <h4>Early Learning and Application</h4>
         <ul>
           <li>Hello World - First Static Website</li>
@@ -16,7 +16,7 @@ function Journey() {
         </ul>
       </div>
 
-      <div className="intermediate">
+      <div className="card intermediate">
         <h4>Discovering What's Out There And Piecing It Together</h4>
         <ul>
           <li>Using Dynamic Data to Create Simple WebApps (e.g.: weather data fetch and display, random X of the day)</li>
@@ -29,7 +29,7 @@ function Journey() {
         </ul>
       </div>
 
-      <div className="proficient">
+      <div className="card proficient">
         <h4>Settling Structures Into Mental Models and Using Them To Compose New Systems</h4>
         <ul>
           <li>Releases, Version Locking, Containers (consider: Docker, CI/CD pipelines, travis, yaml)</li>
@@ -40,7 +40,7 @@ function Journey() {
         </ul>
       </div>
 
-      <div className="senior">
+      <div className="card senior">
         <h4>Moving Up The Hierarchy and Realizing Decisions Involve Tradeoffs</h4>
         <ul>
           <li>Systems Architecture Design</li>

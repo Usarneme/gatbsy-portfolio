@@ -599,6 +599,12 @@ pre tt:after {
   --color13:	#C269BC;
   --color14:	#58D6BF;
   --color15:	#F4F5F2;
+  --ms: 0.25rem;
+  --mm: 0.65rem;
+  --ml: 1rem;
+  --ps: 0.75rem;
+  --pm: 0.9rem;
+  --pl: 1.1rem;
 }
 
 /* SHARED STYLES */
@@ -653,20 +659,24 @@ p {
   left: 0;
 }
 
+.center {
+  margin: 0 auto;
+}
+
 /* MAX WIDTH HELPERS */
 .six {
   max-width: 600px;
-  margin: inherit auto;
+  /* margin: 0 auto; */
 }
 
 .nine {
   max-width: 900px;
-  margin: inherit auto;
+  /* margin: 0 auto; */
 }
 
 .twelve {
   max-width: 1200px;
-  margin: inherit auto;
+  /* margin: 0 auto; */
 }
 
 /* GATSBY WRAPPER - main section below header above footer */

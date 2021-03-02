@@ -1,9 +1,9 @@
 .index-container {
-  margin: 1rem;
+  margin: var(--ms);
   background: var(--color8);
 }
 
-.focus-areas {
+.cards {
   display: inline-block;
   position: relative;
   text-align: center;
@@ -69,15 +69,13 @@ i.icon.mdi {
   width: inherit;
 }
 
-.focus-area {
-  margin: 0.15rem;
-  background: rgba(0,0,0,0.1);
-  padding: 0.25rem;
+.card {
+  margin: var(--ms);
+  padding: var(--ps);
+  background: rgba(0,0,0,0.18);
 }
 
 #devicons {
-  max-width: 600px;
-  margin: 0 auto;
   display: block;
 }
 
@@ -159,9 +157,9 @@ section:nth-of-type(2) .skill-name {
 
 /* MEDIA QUERIES */
 @media (min-width: 500px) {
-  .focus-area {
-    margin: 0.5rem;
-    padding: 0.8rem;
+  .card {
+    margin: var(--mm);
+    padding: var(--pm);
   }
 }
 @media (min-width: 700px) {
@@ -177,9 +175,11 @@ section:nth-of-type(2) .skill-name {
   }  
 }
 @media (min-width: 900px) {
+  .card {
+    margin: var(--ml);
+    padding: var(--pl);
+  }
   .focus-area {
-    margin: 1rem;
-    padding: 1.25rem;
     height: 25rem; /* 10px * 25rem = 250px */
   }
 

@@ -8,11 +8,11 @@ import "./CV.css"
 const CV = () => (
   <Layout>
     <SEO title="CV" />
-    <div className="cv-container">
+    <div className="nine center cv-container">
       <section className="professional">
         <h2>Professional History</h2>
 
-        <div className="pro-card">
+        <div className="card">
           <div className="info">
             <h3>Cofense, Inc.</h3>
             <span>Portland, OR (Remote)</span>
@@ -24,7 +24,7 @@ const CV = () => (
           </div>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <div className="info">
             <h3>Codementor</h3>
             <span>Portland, OR (Remote)</span>
@@ -37,7 +37,7 @@ const CV = () => (
           </div>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <div className="info">
             <h3>Multnomah County Department of County Human Services</h3>
             <span>Aging, Disability, and Veteran Services Division </span>
@@ -52,7 +52,7 @@ const CV = () => (
           </div>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <div className="info">
             <h3>State of Oregon </h3>
             <span>Department of Human Services</span>
@@ -67,7 +67,7 @@ const CV = () => (
           </div>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <div className="info">
             <h3>Tomayo Web Development</h3>
             <span>Co-founder</span>
@@ -86,25 +86,25 @@ const CV = () => (
       <section className="coursework">
         <h2>Tech Relevant Coursework</h2>
 
-        <div className="pro-card">
+        <div className="card">
           <h3>CS50x</h3>
           <span>edX/Harvard/Yale Collaboration.</span>
           <p>Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include: C, Python, SQL, and JavaScript plus CSS and HTML.</p>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <h3>CS101</h3>
           <span>University of Puget Sound.</span>
           <p>Introduction to Computer Science and general coding principles. Language utilized: Java. Textbook utilized: "Objects First with Java - A Practical Introduction Using BlueJ."</p>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <h3>CAS111</h3>
           <span>Portland Community College.</span> 
           <p>CMS Website Creation. Primary language utilized: PHP. We learned to create a custom-built Content Management System (CMS) utilizing PHP, HTML, and CSS with a MySQL database used to store persistent user data. </p>
         </div>
 
-        <div className="pro-card">
+        <div className="card">
           <h3>Team Treehouse Online Coding Training</h3>
           <span>Student Profile: <a href="https://teamtreehouse.com/tomgeraghty2">https://teamtreehouse.com/tomgeraghty2</a></span>
 
