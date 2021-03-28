@@ -113,19 +113,6 @@ const Projects = () => (
         <p>The Pomodoro technique is a way of focusing your energies for the greatest productivity and output. By using spaced repetition and breaks you can reinforce learning or set yourself up for highly productive focus time while working.</p>
       </a>
 
-      <a href="https://hero5-run.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project card meditations">
-        <h4>Take Note</h4>
-        <small>don't you forget about me</small>
-        <ImageNotes className="project-image" alt="The Take Note app." />
-        <p>A simple note taking app when you're on the run. Quick chat saves to localStorage every 10 seconds anything you type into the full screen textarea.</p>
-      </a>
-      <a href="https://usarneme-socket-chat.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project card meditations">
-        <h4>Socket Chat</h4>
-        <small>talk about more than just wrenches</small>
-        <ImageSocketChat className="project-image" alt="The WebSockets powered by SocketIO Chat app." />
-        <p>Built on ExpressJS and powered by Socket.io this socket chat application allows for instant transimission of chat messages between all connected users. All chat data is stored in an mLab-hosted MongoDB database (through Express Mongoose).</p>
-      </a>
-
     </section>
   </Layout>
 )

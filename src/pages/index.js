@@ -28,7 +28,7 @@ import SpanishLanguageIcon from "../images/icons/Spanish_Language_Icon"
 import "./index.css"
 
 function IndexPage() {
-  const skills = {"HTML5": 99,"CSS3": 99,"English": 99,"BBQ": 99,"JavaScript": 90,"Bootstrap": 90,"Spanish": 85,"React": 85,"NodeJS": 80,"Express": 80,"Git": 80,"Linux": 75,"SASS": 75,"jQuery": 75,"MongoDB": 75,"Drupal": 65,"Guitar": 60,"GoLang": 45}
+  const skills = {"HTML5": 99,"CSS3": 99,"English": 99,"BBQ": 99,"JavaScript": 90,"Bootstrap": 90,"Spanish": 85,"React": 85,"jQuery": 85,"Git": 85,"Linux": 80,"NodeJS": 80,"Express": 80,"SASS": 75,"MongoDB": 75,"Drupal": 65,"Guitar": 60,"GoLang": 45}
 
   return (
     <Layout>
@@ -158,6 +158,8 @@ function IndexPage() {
                 case "GoLang":
                   icon = <GoIcon className="icon-go" iconTitle="icon-17-golang" width="25" height="25" />
                   break
+                default:
+                  console.log('eslint warning w/out default case')
               }
               return (
                 <div key={skill} className="flex skill-holder">
@@ -180,7 +182,7 @@ function IndexPage() {
           <h2>Contact Details...</h2>
         </div>
         <div className="flex cols">
-          <p>Please shoot me an email if you are interested in working together. Questions and general enquiries are welcome but please no spam or recruiters (recruiters can find me on <a href="#">LinkedIn</a>).</p>
+          <p>Please shoot me an email if you are interested in working together. Questions and general enquiries are welcome but please no spam or recruiters (recruiters can find me on <a href="https://www.linkedin.com/in/tom-geraghty">LinkedIn</a>).</p>
           <form className="flex cols" onSubmit={() => alert("Not accepting emails at this time. Please check back later.")} >
             <label htmlFor="email">Email</label>
             <input type="email" disabled={true} placeholder="Email address..." />
